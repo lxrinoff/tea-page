@@ -1,0 +1,127 @@
+/* Общие стили */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f6f5f2;
+    color: #4a4a4a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #d8e3dc;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+header .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+header .nav a:hover {
+    color: #6c9478;
+}
+
+/* Главная секция */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('tea-home.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Секция "Story" */
+.story {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background: #ffffff;
+}
+
+.story img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story-content p {
+    margin: 0;
+}
+
+/* Секция "Blog" */
+.blog {
+    padding: 50px 20px;
+    background: #f6f5f2;
+    text-align: center;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-grid article {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Секция "Subscribe" */
+.subscribe {
+    padding: 50px 20px;
+    background: #6c9478;
+    color: white;
+    text-align: center;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background: #3b3b3b;
+}
